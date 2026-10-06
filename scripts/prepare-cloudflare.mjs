@@ -1,0 +1,11 @@
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+const source=JSON.parse(readFileSync('cloudflare-target.json','utf8'));
+if(!source.account_id||!source.database_id||source.database_id.startsWith('00000000'))throw new Error('Cloudflare account and database must be configured before deploying.');
+const config=JSON.parse(readFileSync('dist/server/wrangler.json','utf8'));
+config.name='satya-scan';config.account_id=source.account_id;config.workers_dev=true;
+config.d1_databases=[{binding:'DB',database_name:'satya-scan',database_id:source.database_id,migrations_dir:'../../drizzle'}];config.r2_buckets=[];
+config.assets={...config.assets,directory:'../client',binding:'ASSETS'};
+config.observability={enabled:true};
+writeFileSync('dist/server/wrangler.cloudflare.json',JSON.stringify(config,null,2)+'\n');
+mkdirSync('work',{recursive:true});
+console.log('Cloudflare deployment configuration prepared.');

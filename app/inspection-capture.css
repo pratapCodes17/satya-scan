@@ -1,0 +1,229 @@
+.capture-dropzone {
+  align-items: stretch;
+  min-height: 286px;
+  padding: 38px 28px 28px;
+}
+
+.capture-dropzone .upload-symbol,
+.capture-dropzone h3,
+.capture-dropzone > p {
+  align-self: center;
+}
+
+.capture-choice-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 12px auto 0;
+  flex-wrap: wrap;
+}
+
+.capture-guidance {
+  display: flex;
+  justify-content: center;
+  gap: 11px;
+  margin-top: 20px;
+  color: #6b7e95;
+  font-size: 12px;
+  flex-wrap: wrap;
+}
+
+.capture-guidance span + span {
+  border-left: 1px solid #cedbe9;
+  padding-left: 11px;
+}
+
+.camera-fallback {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  max-width: 580px;
+  margin: 19px auto 0;
+  padding: 10px 12px;
+  border: 1px solid #eed4a5;
+  border-radius: 7px;
+  color: #83570f;
+  background: #fff8e9;
+  text-align: left;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.camera-fallback svg {
+  flex: none;
+  margin-top: 1px;
+}
+
+.capture-preview {
+  grid-template-columns: 115px minmax(0, 1fr);
+}
+
+.label-view-plan {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 11px 13px;
+  border: 1px solid #dbe6f2;
+  border-radius: 7px;
+  color: #446482;
+  background: #f7faff;
+}
+
+.label-view-plan svg {
+  flex: none;
+  margin-top: 1px;
+  color: #165aef;
+}
+
+.label-view-plan strong,
+.label-view-plan small {
+  display: block;
+}
+
+.label-view-plan strong {
+  color: #284765;
+  font-size: 12px;
+}
+
+.label-view-plan small {
+  margin-top: 2px;
+  color: #6b7f94;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.camera-capture-panel {
+  position: fixed;
+  z-index: 50;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  gap: 18px;
+  padding: 28px;
+  color: #eaf3ff;
+  background: rgba(5, 19, 33, 0.89);
+}
+
+.camera-capture-heading,
+.camera-capture-actions,
+.camera-video-wrap {
+  width: min(760px, calc(100vw - 56px));
+}
+
+.camera-capture-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.camera-capture-heading .eyebrow {
+  margin-bottom: 5px;
+  color: #9cd3ff;
+}
+
+.camera-capture-heading h3 {
+  margin: 0 0 5px;
+  color: #fff;
+}
+
+.camera-capture-heading p {
+  max-width: 510px;
+  margin: 0;
+  color: #c5d5e7;
+  font-size: 13px;
+}
+
+.camera-capture-heading .text-button {
+  color: #dcecff;
+  white-space: nowrap;
+}
+
+.camera-video-wrap {
+  overflow: hidden;
+  border: 1px solid rgba(192, 222, 255, 0.38);
+  border-radius: 13px;
+  background: #06121f;
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.4);
+}
+
+.camera-video-wrap video {
+  display: block;
+  width: 100%;
+  max-height: min(62vh, 620px);
+  object-fit: contain;
+}
+
+.camera-capture-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  color: #c5d5e7;
+  font-size: 12px;
+}
+
+.camera-capture-actions > span {
+  max-width: 350px;
+}
+
+.camera-capture-actions .btn:not(.primary) {
+  border-color: #718da9;
+  color: #e2edf8;
+  background: transparent;
+}
+
+@media (max-width: 620px) {
+  .capture-dropzone {
+    padding: 28px 16px 22px;
+  }
+
+  .capture-choice-row {
+    width: 100%;
+  }
+
+  .capture-choice-row .btn {
+    flex: 1 1 190px;
+  }
+
+  .capture-guidance {
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .capture-guidance span + span {
+    border-left: 0;
+    padding-left: 0;
+  }
+
+  .capture-preview {
+    grid-template-columns: 90px minmax(0, 1fr);
+  }
+
+  .camera-capture-panel {
+    place-content: stretch;
+    padding: 20px 16px;
+  }
+
+  .camera-capture-heading,
+  .camera-capture-actions,
+  .camera-video-wrap {
+    width: 100%;
+  }
+
+  .camera-capture-heading,
+  .camera-capture-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .camera-capture-actions .button-row {
+    width: 100%;
+  }
+
+  .camera-capture-actions .btn {
+    flex: 1;
+  }
+}

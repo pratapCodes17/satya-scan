@@ -1,0 +1,395 @@
+{
+  "schemaVersion": 1,
+  "description": "Deterministic synthetic OCR test fixtures. Not real product labels.",
+  "confidenceSource": "Prepared demo metadata; these values are not OCR measurements.",
+  "bboxConvention": "Original 1200x1400 image pixels; top-left origin; x0/y0 inclusive and x1/y1 exclusive; tight visible ink bounding boxes.",
+  "products": [
+    {
+      "id": "sample1",
+      "product": "Harvest Oat Biscuits",
+      "image": "sample1.png",
+      "width": 1200,
+      "height": 1400,
+      "expectedStatus": "PASS",
+      "demo": true,
+      "text": "FICTIONAL DEMO LABEL\nHarvest Oat Biscuits\nManufacturer: ABC Foods Pvt. Ltd.\nAddress: 24 Sample Road, Pune 411001\nNet Quantity: 100 g\nMRP: Rs. 50 (inclusive of all taxes)\nBatch No.: B1025\nPacked: 09/2026\nConsumer Care: 1800-123-456\nSynthetic fixture - not a real product.",
+      "lines": [
+        {
+          "id": "sample1-line-1",
+          "field": "demoNotice",
+          "text": "FICTIONAL DEMO LABEL",
+          "confidence": 95,
+          "bbox": {
+            "x0": 90,
+            "y0": 101,
+            "x1": 423,
+            "y1": 121
+          }
+        },
+        {
+          "id": "sample1-line-2",
+          "field": "product",
+          "text": "Harvest Oat Biscuits",
+          "confidence": 95,
+          "bbox": {
+            "x0": 91,
+            "y0": 193,
+            "x1": 557,
+            "y1": 230
+          }
+        },
+        {
+          "id": "sample1-line-3",
+          "field": "manufacturer",
+          "text": "Manufacturer: ABC Foods Pvt. Ltd.",
+          "confidence": 95,
+          "bbox": {
+            "x0": 90,
+            "y0": 347,
+            "x1": 643,
+            "y1": 373
+          }
+        },
+        {
+          "id": "sample1-line-4",
+          "field": "address",
+          "text": "Address: 24 Sample Road, Pune 411001",
+          "confidence": 95,
+          "bbox": {
+            "x0": 88,
+            "y0": 455,
+            "x1": 736,
+            "y1": 488
+          }
+        },
+        {
+          "id": "sample1-line-5",
+          "field": "netQuantity",
+          "text": "Net Quantity: 100 g",
+          "confidence": 95,
+          "bbox": {
+            "x0": 90,
+            "y0": 563,
+            "x1": 396,
+            "y1": 596
+          }
+        },
+        {
+          "id": "sample1-line-6",
+          "field": "mrp",
+          "text": "MRP: Rs. 50 (inclusive of all taxes)",
+          "confidence": 95,
+          "bbox": {
+            "x0": 90,
+            "y0": 671,
+            "x1": 645,
+            "y1": 704
+          }
+        },
+        {
+          "id": "sample1-line-7",
+          "field": "batch",
+          "text": "Batch No.: B1025",
+          "confidence": 95,
+          "bbox": {
+            "x0": 90,
+            "y0": 779,
+            "x1": 369,
+            "y1": 805
+          }
+        },
+        {
+          "id": "sample1-line-8",
+          "field": "packed",
+          "text": "Packed: 09/2026",
+          "confidence": 95,
+          "bbox": {
+            "x0": 90,
+            "y0": 887,
+            "x1": 357,
+            "y1": 913
+          }
+        },
+        {
+          "id": "sample1-line-9",
+          "field": "consumerCare",
+          "text": "Consumer Care: 1800-123-456",
+          "confidence": 95,
+          "bbox": {
+            "x0": 89,
+            "y0": 995,
+            "x1": 585,
+            "y1": 1021
+          }
+        },
+        {
+          "id": "sample1-line-10",
+          "field": "fixtureNotice",
+          "text": "Synthetic fixture - not a real product.",
+          "confidence": 95,
+          "bbox": {
+            "x0": 89,
+            "y0": 1296,
+            "x1": 543,
+            "y1": 1322
+          }
+        }
+      ],
+      "sha256": "0157c15f5d9f821fc7f9b4fb9fe0f98b6ab60bbdff05f549fd22b61b2162b0af"
+    },
+    {
+      "id": "sample2",
+      "product": "Nilgiri Leaf Tea",
+      "image": "sample2.png",
+      "width": 1200,
+      "height": 1400,
+      "expectedStatus": "CHECK",
+      "demo": true,
+      "text": "FICTIONAL DEMO LABEL\nNilgiri Leaf Tea\nManufacturer: Demo Tea Co.\nAddress: 24 Sample Road, Pune 411001\nNet Quantity: 250 g\nMRP: Rs. 180 (inclusive of all taxes)\nBatch No.: T0926\nPacked: 09/2026\nConsumer Care: 1800-12?-456\nSynthetic fixture - not a real product.",
+      "lines": [
+        {
+          "id": "sample2-line-1",
+          "field": "demoNotice",
+          "text": "FICTIONAL DEMO LABEL",
+          "confidence": 95,
+          "bbox": {
+            "x0": 90,
+            "y0": 101,
+            "x1": 423,
+            "y1": 121
+          }
+        },
+        {
+          "id": "sample2-line-2",
+          "field": "product",
+          "text": "Nilgiri Leaf Tea",
+          "confidence": 95,
+          "bbox": {
+            "x0": 91,
+            "y0": 194,
+            "x1": 430,
+            "y1": 239
+          }
+        },
+        {
+          "id": "sample2-line-3",
+          "field": "manufacturer",
+          "text": "Manufacturer: Demo Tea Co.",
+          "confidence": 95,
+          "bbox": {
+            "x0": 90,
+            "y0": 347,
+            "x1": 551,
+            "y1": 373
+          }
+        },
+        {
+          "id": "sample2-line-4",
+          "field": "address",
+          "text": "Address: 24 Sample Road, Pune 411001",
+          "confidence": 95,
+          "bbox": {
+            "x0": 88,
+            "y0": 455,
+            "x1": 736,
+            "y1": 488
+          }
+        },
+        {
+          "id": "sample2-line-5",
+          "field": "netQuantity",
+          "text": "Net Quantity: 250 g",
+          "confidence": 95,
+          "bbox": {
+            "x0": 90,
+            "y0": 563,
+            "x1": 396,
+            "y1": 596
+          }
+        },
+        {
+          "id": "sample2-line-6",
+          "field": "mrp",
+          "text": "MRP: Rs. 180 (inclusive of all taxes)",
+          "confidence": 95,
+          "bbox": {
+            "x0": 90,
+            "y0": 671,
+            "x1": 665,
+            "y1": 704
+          }
+        },
+        {
+          "id": "sample2-line-7",
+          "field": "batch",
+          "text": "Batch No.: T0926",
+          "confidence": 95,
+          "bbox": {
+            "x0": 90,
+            "y0": 779,
+            "x1": 367,
+            "y1": 805
+          }
+        },
+        {
+          "id": "sample2-line-8",
+          "field": "packed",
+          "text": "Packed: 09/2026",
+          "confidence": 95,
+          "bbox": {
+            "x0": 90,
+            "y0": 887,
+            "x1": 357,
+            "y1": 913
+          }
+        },
+        {
+          "id": "sample2-line-9",
+          "field": "consumerCare",
+          "text": "Consumer Care: 1800-12?-456",
+          "confidence": 45,
+          "bbox": {
+            "x0": 89,
+            "y0": 995,
+            "x1": 585,
+            "y1": 1021
+          }
+        },
+        {
+          "id": "sample2-line-10",
+          "field": "fixtureNotice",
+          "text": "Synthetic fixture - not a real product.",
+          "confidence": 95,
+          "bbox": {
+            "x0": 89,
+            "y0": 1296,
+            "x1": 543,
+            "y1": 1322
+          }
+        }
+      ],
+      "sha256": "6491038674e31556ff24a8da34223d8c85036227d805c86c432d2fdc1df8e560"
+    },
+    {
+      "id": "sample3",
+      "product": "Everyday Rice",
+      "image": "sample3.png",
+      "width": 1200,
+      "height": 1400,
+      "expectedStatus": "NOT DETECTED",
+      "demo": true,
+      "text": "FICTIONAL DEMO LABEL\nEveryday Rice\nManufacturer: ABC Staples Pvt. Ltd.\nAddress: 24 Sample Road, Pune 411001\nNet Quantity: 1 kg\nBatch No.: R0926\nPacked: 09/2026\nConsumer Care: 1800-123-456\nSynthetic fixture - not a real product.",
+      "lines": [
+        {
+          "id": "sample3-line-1",
+          "field": "demoNotice",
+          "text": "FICTIONAL DEMO LABEL",
+          "confidence": 95,
+          "bbox": {
+            "x0": 90,
+            "y0": 101,
+            "x1": 423,
+            "y1": 121
+          }
+        },
+        {
+          "id": "sample3-line-2",
+          "field": "product",
+          "text": "Everyday Rice",
+          "confidence": 95,
+          "bbox": {
+            "x0": 91,
+            "y0": 194,
+            "x1": 416,
+            "y1": 239
+          }
+        },
+        {
+          "id": "sample3-line-3",
+          "field": "manufacturer",
+          "text": "Manufacturer: ABC Staples Pvt. Ltd.",
+          "confidence": 95,
+          "bbox": {
+            "x0": 90,
+            "y0": 347,
+            "x1": 663,
+            "y1": 380
+          }
+        },
+        {
+          "id": "sample3-line-4",
+          "field": "address",
+          "text": "Address: 24 Sample Road, Pune 411001",
+          "confidence": 95,
+          "bbox": {
+            "x0": 88,
+            "y0": 455,
+            "x1": 736,
+            "y1": 488
+          }
+        },
+        {
+          "id": "sample3-line-5",
+          "field": "netQuantity",
+          "text": "Net Quantity: 1 kg",
+          "confidence": 95,
+          "bbox": {
+            "x0": 90,
+            "y0": 563,
+            "x1": 374,
+            "y1": 596
+          }
+        },
+        {
+          "id": "sample3-line-6",
+          "field": "batch",
+          "text": "Batch No.: R0926",
+          "confidence": 95,
+          "bbox": {
+            "x0": 90,
+            "y0": 671,
+            "x1": 371,
+            "y1": 697
+          }
+        },
+        {
+          "id": "sample3-line-7",
+          "field": "packed",
+          "text": "Packed: 09/2026",
+          "confidence": 95,
+          "bbox": {
+            "x0": 90,
+            "y0": 779,
+            "x1": 357,
+            "y1": 805
+          }
+        },
+        {
+          "id": "sample3-line-8",
+          "field": "consumerCare",
+          "text": "Consumer Care: 1800-123-456",
+          "confidence": 95,
+          "bbox": {
+            "x0": 89,
+            "y0": 887,
+            "x1": 585,
+            "y1": 913
+          }
+        },
+        {
+          "id": "sample3-line-9",
+          "field": "fixtureNotice",
+          "text": "Synthetic fixture - not a real product.",
+          "confidence": 95,
+          "bbox": {
+            "x0": 89,
+            "y0": 1296,
+            "x1": 543,
+            "y1": 1322
+          }
+        }
+      ],
+      "sha256": "d01ba0797d9a512c40d3f5e47cf62d68ef0f424a57738b77099cef37e02ae404"
+    }
+  ]
+}
